@@ -1,0 +1,19 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { width:100%; height:100%; overflow:hidden; background:#000; font-family:system-ui; }
+#camera { position:fixed; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+#scene  { position:fixed; inset:0; width:100%; height:100%; z-index:1; }
+#hud    { position:fixed; inset:0; z-index:2; pointer-events:none; }
+#hud button { pointer-events:auto; }
+#status { position:absolute; top:10px; left:10px; right:10px; text-align:center; color:#fff;
+          background:rgba(0,0,0,.65); padding:8px; border-radius:8px; font-size:14px; }
+#startBtn { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+            padding:16px 36px; font-size:18px; border:none; border-radius:14px;
+            background:#0a84ff; color:#fff; }
+#micBtn, #addBtn, #clearBtn, #aiBtn { position:absolute; bottom:20px; width:58px; height:58px;
+            border-radius:50%; border:none; font-size:22px; background:rgba(255,255,255,.9); }
+#micBtn { left:20px; }
+#aiBtn  { left:90px; background:rgba(255,255,255,.7); }
+#clearBtn { right:90px; }
+#addBtn { right:20px; }
+#micBtn.listening { background:#ff3b30; color:#fff; }
+#aiBtn.on { background:#34c759; color:#fff; }
